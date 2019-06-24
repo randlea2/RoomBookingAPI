@@ -1,0 +1,12 @@
+<h2>Room List</h2>
+      {% if room_list %}
+		{% for room in room_list %}
+            <h2> {{room[0]}}</h2>
+		    <p>&emsp;Capacity: {{room[1]}}</p>
+		{% endfor %}
+		{% else %}
+			<p>No rooms registered</p>
+		{% endif %}
+    </select>
+</form>
+

@@ -1,0 +1,25 @@
+<html>
+  <body >
+  	<h2>Timetable for {{room_number}} </h2>
+	   <font size="10%">
+		   <table>
+			<tr>
+				<th> Day </th>
+				{% for time in time_slots %}
+				<th> {{time}} </th>
+				{% endfor %} 
+			</tr>
+			   {% for day in days %}
+				<tr>
+				<td>{{day}}</td>
+					{% for time in time_slots %}
+					
+						<td> {{ timetable[day][time] }} </td>
+					
+						{% endfor %}
+				</tr>
+				{% endfor %} 
+		   </table>
+	   </font>
+  </body>
+</html>

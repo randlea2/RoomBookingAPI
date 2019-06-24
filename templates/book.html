@@ -1,0 +1,24 @@
+<form method="POST"  action="/timetable/book" >
+	<h2>Book room</h2>
+    <select name="room" >
+	    {% for room in rooms %}
+			<option value={{room.name}} >{{room.name}}</option>
+		{% endfor %}
+    </select>
+	<select name="day">
+	    {% for day in days %}
+			<option value={{day}} >{{day}}</option>
+		{% endfor %}
+	</select>
+	<select name="time">
+	    {% for time in time_slots %}
+			<option value={{time}} >{{time}}</option>
+		{% endfor %}
+    </select>
+	Event:
+    <input type="text" name="event" >
+	<br>
+    <br>
+    <input type="submit" name="submit" value="Submit">
+</form>
+

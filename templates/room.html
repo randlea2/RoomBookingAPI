@@ -1,0 +1,12 @@
+<form method="POST" action="/timetable/room" >
+	<h2>Display room timetable</h2>
+    <select name="room" >
+		{% for room in room_names %}
+			
+			<option value={{room.name}} >{{room.name}}</option>
+		
+		{% endfor %} 
+    </select>
+    <input type="submit" name="submit" value="Submit">
+</form>
+
