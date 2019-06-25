@@ -13,7 +13,7 @@
 * Locally (Preferred)
   * pip install -r requirements.txt
   * python server.py
-  * hittp://127.0.0.1:5000
+  * http://127.0.0.1:5000
 
 * Remotely: https://ca4006-assignment2.appspot.com 
 
